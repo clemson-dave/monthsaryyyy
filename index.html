@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Monthsary Chloe 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffd6e8, #fff1f7);
+      color: #5a2a3c;
+      text-align: center;
+    }
+
+    header {
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+    }
+
+    h2 {
+      margin-top: 40px;
+    }
+
+    .heart {
+      font-size: 2em;
+      animation: float 2s infinite ease-in-out;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    .letter {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      font-size: 1.1em;
+      line-height: 1.7;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .photo {
+      background: #ffe4ef;
+      border-radius: 15px;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 0.9em;
+      transition: transform 0.3s;
+    }
+
+    .photo:hover {
+      transform: scale(1.05);
+    }
+
+    .surprise {
+      display: none;
+      background: white;
+      padding: 20px;
+      border-radius: 20px;
+      max-width: 500px;
+      margin: 20px auto;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    footer {
+      margin: 50px 0 20px;
+      font-size: 0.9em;
+    }
+
+    button {
+      background: #ff8fb3;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 1em;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #ff6f9e;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- MUSIC -->
+  <audio autoplay loop>
+    <!-- Replace the src with your own MP3 file -->
+    <source src="711-toneejay.mp3" type="audio/mpeg">
+  </audio>
+
+  <header>
+    <h1>Happy Monthsary 💕</h1>
+    <p><strong>Clemson Dave Balighot & Chloe Amber Timan</strong></p>
+    <p>November 17, 2025</p>
+    <div class="heart">💖</div>
+  </header>
+
+  <section>
+    <h2>💌 Love Letter</h2>
+    <div class="letter">
+      Hi love 🤍<br><br>
+
+      Happy monthsary sa atin love. Even though we are apart from each others, i promise na mamahalin kita nang totoo, at araw-araw kitang pipiliin. I’m so grateful na ikaw yung kasama ko sa journey na ’to. More months, more memories, more love kaw lang 💗
+
+This is just our first monthsary, pero promise ko sayo,
+That I’ll always be here po and that my love for you wont ever change. I love you po, always. 💖💖 <br><br>
+
+      Mahal na mahal kita,<br>
+      <strong>Dave</strong>
+    </div>
+  </section>
+
+  <section>
+    <h2>📸 Our Memories</h2>
+    <p>(Click a photo for a surprise 💕)</p>
+
+    <div class="gallery">
+      <div class="photo" onclick="showSurprise()">Add Photo Here</div>
+      <div class="photo" onclick="showSurprise()">Add Photo Here</div>
+      <div class="photo" onclick="showSurprise()">Add Photo Here</div>
+      <div class="photo" onclick="showSurprise()">Add Photo Here</div>
+    </div>
+
+    <div class="surprise" id="surpriseBox">
+      <h3>💖 Surprise 💖</h3>
+      <p>
+        I made you a bouquet of flower po. I hope you like ittt💗
+      </p>
+      <button onclick="hideSurprise()">Close</button>
+    </div>
+  </section>
+
+  <footer>
+    Made with love for Chloe 💕<br>
+    — Dave
+  </footer>
+
+  <script>
+    function showSurprise() {
+      document.getElementById("surpriseBox").style.display = "block";
+    }
+
+    function hideSurprise() {
+      document.getElementById("surpriseBox").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>
+	◦	
