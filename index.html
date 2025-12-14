@@ -50,10 +50,25 @@
    .gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
+  gap: 14px;
+  padding: 15px;
   justify-items: center;
 }
 
+.polaroid {
+  background: white;
+  padding: 8px 8px 18px 8px;
+  width: 160px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.polaroid img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+}
     .photo {
       background: #ffe4ef;
       border-radius: 15px;
@@ -136,12 +151,22 @@ That I’ll always be here po and that my love for you wont ever change. I love 
     <p>(Click a photo for a surprise 💕)</p>
 
     <div class="gallery">
-  <img src="Photo1.jpg">
-  <img src="Photo2.jpg">
-  <img src="Photo3.jpg">
-  <img src="Photo4.jpg">
-</div>
+  <div class="polaroid">
+    <img src="photo1.jpg">
+  </div>
 
+  <div class="polaroid">
+    <img src="photo2.jpg">
+  </div>
+
+  <div class="polaroid">
+    <img src="photo3.jpg">
+  </div>
+
+  <div class="polaroid">
+    <img src="photo4.jpg">
+  </div>
+</div>
     <div class="surprise" id="surpriseBox">
       <h3>💖 Surprise 💖</h3>
       <p>
