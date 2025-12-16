@@ -114,7 +114,9 @@
     button:hover {
       background: #ff6f9e;
     }
-  </style> .surprise-btn {
+  </style> 
+
+	.surprise-btn {
   background: #ff8fb1;
   color: white;
   border: none;
@@ -130,8 +132,22 @@
 .surprise-box {
   display: none;
   text-align: center;
-  margin-top: 20px;
-  animation: fadeIn 0.6s ease;
+  margin-top: 25px;
+  animation: revealPop 0.8s ease forwards;
+}
+
+@keyframes revealPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.7) translateY(20px);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.05) translateY(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .surprise-text {
@@ -180,17 +196,6 @@ That I’ll always be here po and that my love for you wont ever change. I love 
     </div>
   </section>
 
-  <section><button class="surprise-btn" onclick="showSurprise()">
-  Click for a Surprise 💝
-</button>
-
-<div id="surprise" class="surprise-box">
-  <img src="surprise.jpg" class="polaroid">
-  <p class="surprise-text">
-    Hi love 💗<br><br>
-    i made ur new fav flower jst for u po, i hopes u like it. 🫶
-  </p>
-</div>
 
     <div class="section">
   <h2>📸 Our Memories</h2>
@@ -216,15 +221,15 @@ That I’ll always be here po and that my love for you wont ever change. I love 
     — Dave
   </footer>
 
-  <script>
-    function showSurprise() {
-      document.getElementById("surpriseBox").style.display = "block";
-    }
 
-    function hideSurprise() {
-      document.getElementById("surpriseBox").style.display = "none";
-    }
-  </script>
+
+<script>
+  function showSurprise() {
+    const s = document.getElementById("surprise");
+    s.style.display = "block";
+    s.scrollIntoView({ behavior: "smooth" });
+  }
+</script>
 
 </body>
 </html>
