@@ -114,8 +114,41 @@
     button:hover {
       background: #ff6f9e;
     }
-  </style>
+  </style> .surprise-btn {
+  background: #ff8fb1;
+  color: white;
+  border: none;
+  padding: 14px 22px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  margin: 20px auto;
+  display: block;
+}
+
+.surprise-box {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+  animation: fadeIn 0.6s ease;
+}
+
+.surprise-text {
+  color: #d63384;
+  font-size: 15px;
+  margin-top: 10px;
+  padding: 0 20px;
+}
 </head>
+
+<script>
+  function showSurprise() {
+    const s = document.getElementById("surprise");
+    s.style.display = "block";
+    s.scrollIntoView({ behavior: "smooth" });
+  }
+</script>
 
 <body>
 
@@ -147,9 +180,17 @@ That I’ll always be here po and that my love for you wont ever change. I love 
     </div>
   </section>
 
-  <section>
-    <h2>📸 Our Memories</h2>
-    <p>(Click a photo for a surprise 💕)</p>
+  <section><button class="surprise-btn" onclick="showSurprise()">
+  Click for a Surprise 💝
+</button>
+
+<div id="surprise" class="surprise-box">
+  <img src="surprise.jpg" class="polaroid">
+  <p class="surprise-text">
+    Hi love 💗<br><br>
+    i made ur new fav flower jst for u po, i hopes u like it. 🫶
+  </p>
+</div>
 
     <div class="section">
   <h2>📸 Our Memories</h2>
